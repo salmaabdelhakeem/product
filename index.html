@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/index-style.css">
+    </head>
+    <body>
+  
+
+        <h1 class="text-center text-info my-5">Our Products</h1>
+
+
+        <div class="w-75 m-auto text-info">
+
+            <div class="mb-4">
+                <label class="form-label">Product Name</label>
+                <input id="pNameId" class="form-control">
+            </div>
+
+            <div class="mb-4">
+                <label class="form-label">Product Price</label>
+                <input id="pPriceId" class="form-control">
+            </div>
+
+            <div class="mb-4">
+                <label class="form-label">Product Category</label>
+                <input id="pCatId" class="form-control">
+            </div>
+
+            <div class="mb-4">
+                <label class="form-label">Product Description</label>
+                <textarea  id="pDescId" class="form-control"></textarea>
+            </div>
+
+
+            <button id="myBtn" onclick="addProduct()" class="btn btn-info text-white">Add Product</button>
+
+        </div>
+
+
+        <input class="form-control w-50 mx-auto my-5" placeholder="Search Product" onkeyup="test(this.value)">
+
+
+        <table class="table w-75 mx-auto my-5">
+            <thead class="text-white bg-dark">
+                <th>Name</th>
+                <th>Price</th>
+                <th>Categoty</th>
+                <th>Description</th>
+                <th class="text-warning">Update</th>
+                <th class="text-danger">Delete</th>
+                
+            </thead>
+
+            <tbody id="tBody">
+                
+
+
+
+
+
+            </tbody>
+        </table>
+        <script src="js/mine.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
